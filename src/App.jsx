@@ -1,10 +1,14 @@
 import { Header } from "./components/header";
+import  Quiz from "./components/quiz";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-    </div>
+      <main>
+        <Quiz />
+      </main>
+    </>
   );
 }
 
