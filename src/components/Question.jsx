@@ -1,5 +1,4 @@
-import QuestionTimer from "./QuestionTimer.jsx";
-import Answers from "./Answers.jsx";
+import {QuestionTimer} from "./QuestionTimer.jsx";
 import { Answers } from "./Answers.jsx";
 export function Question({
   questionText,
@@ -12,7 +11,6 @@ export function Question({
   return (
     <div id="question">
       <QuestionTimer
-        key={activeQuestionIndex}
         timeout={10000}
         onTimeUp={onSkipQuestion}
       />
